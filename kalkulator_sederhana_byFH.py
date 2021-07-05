@@ -655,5 +655,13 @@ x2 = %s
                     elif a=='x' or a=='X':
                         exit()
         elif menu==0:
-                exit()
-                
+            while True:
+                droid.ttsSpeak('apakah anda yakin ingin keluar? ')
+                droid.ttsSpeak('klik y untuk keluar, klik n untuk mengurungkan dan tetap melanjutkan.')
+                a = input('apakah anda yakin ingin keluar(y/n)? ')
+                if a=='y' or a=='Y':
+                    droid.ttsSpeak('terimakasih sudah mencoba, jangan lupa memberikan kritik dan saran. saran anda sangat kami harapkan untuk kami agar dapat memberikan pelayanan yang lebih baik lagi kedepannya. sampai jumpa.')
+                    exit()
+                elif a=='n' or a=='N':
+                    droid.ttsSpeak('mari kita lanjutkan lagi tugas kita yang belum selesai semoga anda tidak bosan.')
+                    break
