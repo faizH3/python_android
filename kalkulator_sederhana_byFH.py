@@ -56,27 +56,28 @@ while True:
                 elif a==1:
                     while True:
                         print("\nluas segitiga: \n1. luas \n2. alas \n3. tinggi")
-                        a = input("ditanya: ")
-                        if a=="1": #luas
+                        a = int(input("ditanya: "))
+                        if a==1: #luas
                             print("\ndiketahui:")
                             aa1 = float(input("alas: "))
                             aa2 = float(input("tinggi: "))
                             print("\n       %.1fx%.1f"%(aa1,aa2))	
                             print("luas = ------- = %s"%(aa1*aa2/2))
                             print("          2")
-                        elif a=="2": #alas
+                        elif a==2: #alas
                             ab1 = float(input("luas: "))
                             ab2 = float(input("tinggi: "))
                             print("        %sx2"%(ab1))
                             print("alas = ------- = %s"%(ab1*2/ab2))
                             print("          %s"%(ab2))
-                        elif a=="3": #tinggi
+                        elif a==3: #tinggi
                             ac1 = float(input("luas: "))
                             ac2 = float(input("alas: "))
                             print("          %sx2"%(ac1))
                             print("tinggi = ------- = %.2f"%(ac1*2/ac2))
                             print("            %s"%(ac2))
                             print("-----------------------------------------------------------------")
+                        a = input('try again(y/n)? ')
                         print('\n[yes|no|exit]')
                         if a=="n" or a=="N":
                             break
@@ -88,24 +89,24 @@ while True:
                     while True:
                         print("\npersegi panjang:")
                         print("1. luas \n2. panjang \n3.lebar \n0. exit")
-                        a = input("ditanya:")
-                        if a=="0":
+                        a = int(input("ditanya:"))
+                        if a==0:
                             break
-                        elif a=="1":
+                        elif a==1:
                            p = input("panjang: ")
                            l = input("lebar: ")
                            luas = int(p) * int(l)
                            print("luas = P x L")
                            print("luas = %s x %s"%(p,l))
                            print("luas = %s"%(luas))
-                        elif a=="2":
+                        elif a==2:
                             L = input("luas: ")
                             l = input("lebar: ")
                             p = int(L) / int(l)
                             print("panjang = Luas / lebar")
                             print("panjang = %s / %s"%(L,l))
                             print("panjang = %s"%(p))
-                        elif a=="3":
+                        elif a==3:
                             L = input("luas: ")
                             p =input("panjang: ")
                             l = int(L) / int(p)
